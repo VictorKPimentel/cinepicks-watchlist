@@ -1,0 +1,23 @@
+.movieGrid {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    row-gap: 40px;
+    column-gap: 7%;
+}
+
+.login-redirect {
+    text-align: center;
+
+    &:hover {
+        cursor: pointer;
+        text-decoration: underline;
+    }
+}
+
+/* Media Queries for Mobile Optimization */
+@media (max-width: 768px) {
+    .movieGrid {
+        grid-template-columns: 40% 40%;
+        row-gap: 20px;
+    }
+}

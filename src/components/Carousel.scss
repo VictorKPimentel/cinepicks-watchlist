@@ -1,0 +1,77 @@
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    margin: auto;
+
+    .slider {
+        overflow: hidden;
+        width: 90%;
+
+        .movieCardsSlides {
+            display: flex;
+            gap: 2%; // If you change the gap, remember to change the traslateX in Carousel.tsx too
+            transition: transform 0.5s ease-in-out;
+            padding: 10px 0;
+
+            .movieCard {
+                 box-sizing: border-box;
+                 flex-shrink: 0; // Prevent shrinking
+            }
+        }
+    }
+
+    .prev, .next {
+        background: transparent;
+        color: white;
+        border: none;
+        padding: 5px;
+        cursor: pointer;
+        font-size: 24px;
+        border-radius: 50%;
+
+        &:hover {
+            color: var(--mainRedLighter)
+        }
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 3072px) {
+    .slider .movieCardsSlides .movieCard {
+        flex: 0 0 calc((100% / 5) - 2%); // Show 4 cards
+        max-width: calc((100% / 5) - 2%);
+    }
+}
+
+@media (max-width: 1024px) {
+    .slider .movieCardsSlides .movieCard {
+        flex: 0 0 calc((100% / 4) - 2%); // Show 4 cards
+        max-width: calc((100% / 4) - 2%);
+    }
+}
+
+@media (max-width: 768px) {
+    .slider .movieCardsSlides .movieCard {
+        flex: 0 0 calc((100% / 3) - 2%); // Show 3 cards
+        max-width: calc((100% / 3) - 2%);
+    }
+
+    .prev, .next {
+        font-size: 1.5rem; // Reduce button size for mobile
+    }
+}
+
+@media (max-width: 480px) {
+    .slider .movieCardsSlides .movieCard {
+        flex: 0 0 calc((100% / 2) - 2%); // Show 2 cards
+        max-width: calc((100% / 2) - 2%);
+    }
+
+    .prev, .next {
+        font-size: 1rem;
+        padding: 3px;
+    }
+}

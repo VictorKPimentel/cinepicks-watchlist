@@ -1,0 +1,65 @@
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .auth-form {
+    background-color: #202020;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8); // Subtle shadow
+    width: 60%;
+    text-align: center;
+    box-sizing: border-box;
+  
+    h2 {
+      margin-bottom: 1rem;
+      color: white;
+    }
+  
+    input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+      box-sizing: border-box;
+    }
+
+    .forgot-password {
+        margin-top: 0;
+        text-align: left;
+        font-size: 0.8rem;
+
+        &:hover {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+    }
+  
+    button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      background-color: var(--mainRedColor);
+    }
+
+    .error {
+        color: red;
+    }
+  
+    .toggle-link {
+      margin-top: 10px;
+      color: gray;
+      cursor: pointer;
+      font-size: 14px;
+  
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  

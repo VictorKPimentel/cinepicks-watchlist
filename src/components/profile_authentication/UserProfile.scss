@@ -1,0 +1,26 @@
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    .profile-details {
+        background-color: #202020;
+        padding: 2rem;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8); // Subtle shadow
+        width: 50%;
+        text-align: center;
+
+        .profileIcon {
+            font-size: 2rem;
+        }
+
+        .logout {
+            &:hover {
+                cursor: pointer;
+                text-decoration: underline;
+            }
+        }
+    }
+}

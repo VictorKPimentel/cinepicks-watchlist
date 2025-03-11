@@ -1,0 +1,117 @@
+:root {
+  --mainRedColor: #F33F3F;
+  --mainRedLighter: #FF7575;
+}
+
+body {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 16px;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #1A1A1A;
+  
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+
+  .app-container {
+    display: flex;
+    min-height: 100vh;
+
+    .content {
+      width: 80%; // Leave 20% for the SideBar component as in Layout.tsx
+
+      .hamburger {
+        display: none;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 1001;
+        font-size: 30px;
+        color: white;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .title {
+    text-align: center;
+    color: var(--mainRedColor);
+  }
+
+  .container {
+    max-width: 90%;
+    margin: auto;
+    padding-bottom: 30px;
+  }
+
+  button {
+    color: white;
+    height: 2.5rem;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    cursor: pointer;
+
+    &:hover {
+      background-color: var(--mainRedLighter);
+      border: 1px solid var(--mainRedLighter);
+    }
+  }
+
+  a {
+    text-decoration: none; /* Removes underline */
+    color: inherit; /* Keeps the text color the same as the parent element */
+  }
+
+  .home {
+    width: 100%;
+
+    img {
+      width: 100%;
+      height: auto;
+      filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.4)); // Adds depth
+    }
+
+    h3 {
+      font-weight: 400;
+      font-size: 24px;
+      margin-bottom: 18px;
+    }
+  }
+}
+
+/* Media Queries for Mobile Optimization */
+@media (max-width: 768px) {
+
+  body {
+    font-size: 12px;
+
+    .app-container{
+      flex-direction: column; // Stack content on small screens
+      width: 100%; 
+
+      .content {
+        width: 100%; // Make content take full width on mobile screens
+
+        .home {
+          width: 100%;
+        }
+
+        .hamburger {
+          display: block;
+        }
+      }
+
+      .container {
+        width: 100%;
+      }
+    }
+  }
+}

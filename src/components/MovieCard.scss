@@ -1,0 +1,40 @@
+.movieCard {
+    text-align: center;
+    background: #202020; // Slightly lighter background for contrast
+    border-radius: 12px; // Soft rounded corners
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8); // Subtle shadow
+    transition: transform 0.3s ease, box-shadow 0.3s ease; // Smooth hover effect
+    cursor: pointer;
+    width: 100%;
+
+    &:hover {
+    transform: translateY(-5px); // Slight lift on hover
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.7);
+    }
+
+    img {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 8px 8px 0 0; // Soft edges
+    }
+
+    p {
+        margin: 0;
+        padding: 5px;
+        text-align: right;
+    }
+
+    h4 {
+        margin: 10px 5px;
+        font-size: 0.9rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: normal;
+        word-wrap: break-word;
+    }
+}

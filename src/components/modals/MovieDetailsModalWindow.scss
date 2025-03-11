@@ -1,0 +1,48 @@
+.modal-wrapper {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 500;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    display: grid;
+    place-items: center;
+  
+    .inner {
+      background-color: #464646;;
+      padding: 30px 20px;
+      border-radius: 12px;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      max-width: 70%;
+      max-height: 80vh;  // Prevent modal from being too tall
+      overflow-y: auto; // Allow vertical scrolling if content overflows
+      overflow-x: hidden; // Prevent horizontal overflow
+
+      .close-btn {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        padding: 0;
+        cursor: pointer;
+        background: transparent;
+      }
+    }
+}
+
+/* Media Queries for Mobile Optimization */
+@media (max-width: 768px) {
+  .modal-wrapper {
+      width: 100vw;
+      height: 100vh;
+  }
+
+  .inner {
+      max-width: 90%; // Increase max-width on small screens
+      padding: 20px; // Reduce padding for mobile
+      max-height: 90vh; // Allow more vertical space for mobile
+      overflow-y: auto; // Allow scrolling if content overflows
+  }
+}
