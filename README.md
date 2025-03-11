@@ -1,7 +1,8 @@
 # 🎬 CinePicks Watchlist
 A modern movie watchlist app built with React, TypeScript, and SCSS using Vite. CinePicks Watchlist allows users to explore top-rated and newly added movies, search for specific movies, and save them to their personal watchlist.
 
-## 🚀 Live Demo: cinepicks-watchlist.com
+## 🚀 Live Demo:
+[https://cinepicks-watchlist.com](https://cinepicks-watchlist.com)
 
 ## ✨ Features
 ✅ User Authentication – Sign up & log in with email/password (Powered by Firebase).
