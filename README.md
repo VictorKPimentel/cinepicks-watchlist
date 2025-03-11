@@ -1,50 +1,94 @@
-# React + TypeScript + Vite
+# 🎬 CinePicks Watchlist
+A modern movie watchlist app built with React, TypeScript, and SCSS using Vite. CinePicks Watchlist allows users to explore top-rated and newly added movies, search for specific movies, and save them to their personal watchlist.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🚀 Live Demo: cinepicks-watchlist.com
 
-Currently, two official plugins are available:
+## ✨ Features
+✅ User Authentication – Sign up & log in with email/password (Powered by Firebase).
+✅ Movie Discovery – Browse top-rated and newly added movies (Powered by TMDB API).
+✅ Search Functionality – Find any movie by title.
+✅ Watchlist Management – Add movies to your watchlist, saved in Firebase.
+✅ Modern UI – Built with React, TypeScript, and SCSS for a smooth user experience.
+✅ Fast & Optimized – Developed with Vite for blazing-fast performance.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ Tech Stack
+Frontend: React, TypeScript, SCSS, Vite
+Backend & Hosting: Firebase (Authentication, Firestore Database, Hosting)
+Movie Data: TMDB API
 
-## Expanding the ESLint configuration
+## 🎥 Movie Data - TMDB API
+CinePicks Watchlist uses The Movie Database (TMDB) API to fetch movie details, ratings, and search results.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## 📌 Get your own TMDB API Key:
 
-- Configure the top-level `parserOptions` property like this:
+Sign up at TMDB.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+Go to Settings > API and create an API key.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+Add the key to your .env file:
+VITE_TMDB_API_KEY=your_tmdb_api_key
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## 🚀 Getting Started
+### 1️⃣ Clone the Repository
+git clone https://github.com/yourusername/cinepicks-watchlist.git
+cd cinepicks-watchlist
+
+
+### 2️⃣ Install Dependencies
+npm install
+
+
+### 3️⃣ Set Up Environment Variables
+Create a .env file in the root directory and add:
+
+VITE_FIREBASE_API_KEY=your_firebase_api_key
+VITE_FIREBASE_AUTH_DOMAIN=your_firebase_auth_domain
+VITE_FIREBASE_PROJECT_ID=your_firebase_project_id
+VITE_FIREBASE_STORAGE_BUCKET=your_firebase_storage_bucket
+VITE_FIREBASE_MESSAGING_SENDER_ID=your_firebase_messaging_sender_id
+VITE_FIREBASE_APP_ID=your_firebase_app_id
+VITE_TMDB_API_KEY=your_tmdb_api_key
+
+
+### 4️⃣ Start the Development Server
+npm run dev
+Your app will be available at http://localhost:5173/.
+
+
+### 5️⃣ Build for Production
+If you want to create an optimized production build:
+npm run build
+This will generate a dist/ folder with the optimized app.
+
+
+### 6️⃣ Preview the Production Build
+To locally preview the built app before deploying:
+npm run preview
+
+
+### 📤 Deployment
+Deploy to Firebase Hosting
+Install Firebase CLI if you haven't:
+npm install -g firebase-tools
+
+Login to Firebase:
+firebase login
+
+Initialize Firebase (if not done yet):
+firebase init
+
+Build the project:
+npm run build
+
+Deploy to Firebase Hosting:
+firebase deploy
+
+### Alternatively, you can deploy using Vercel or Netlify.
+
+
+## 🌍 Roadmap
+ Add movie trailers using TMDB API.
+ Implement social login (Google, Facebook, etc.).
+ Allow users to rate and review movies.
+ Dark mode theme toggle.
