@@ -13,9 +13,9 @@ A modern movie watchlist app built with React, TypeScript, and SCSS using Vite. 
 ✅ Fast & Optimized – Developed with Vite for blazing-fast performance.
 
 ## 🛠️ Tech Stack
-Frontend: React, TypeScript, SCSS, Vite
-Backend & Hosting: Firebase (Authentication, Firestore Database, Hosting)
-Movie Data: TMDB API
+Frontend: React, TypeScript, SCSS, Vite <br>
+Backend & Hosting: Firebase (Authentication, Firestore Database, Hosting) <br>
+Movie Data: TMDB API <br>
 
 ## 🎥 Movie Data - TMDB API
 CinePicks Watchlist uses The Movie Database (TMDB) API to fetch movie details, ratings, and search results.
