@@ -37,10 +37,12 @@ CinePicks Watchlist is a web app that helps movie lovers discover and track thei
 ```sh
 git clone https://github.com/your-username/cinepicks-watchlist.git
 cd cinepicks-watchlist
+```
 
 #### 2️⃣ Install dependencies
 ```sh
 npm install
+```
 
 #### 3️⃣ Create a .env file in the root directory and add your Firebase & TMDB API keys
 VITE_FIREBASE_API_KEY=your_firebase_api_key
@@ -54,6 +56,7 @@ VITE_TMDB_API_KEY=your_tmdb_api_key
 #### 4️⃣ Run the development server
 ```sh
 npm run dev
+```
 
 #### Your app will be available at http://localhost:5173/
 
@@ -63,22 +66,27 @@ CinePicks Watchlist is hosted on Firebase Hosting. To deploy updates:
 #### 1️⃣ Install Firebase CLI (if not installed)
 ```sh
 npm install -g firebase-tools
+```
 
 #### 2️⃣ Login to Firebase
 ```sh
 firebase login
+```
 
 #### 3️⃣ Initialize Firebase (if not done yet)
 ```sh
 firebase init
+```
 
 #### 4️⃣ Build the project
 ```sh
 npm run build
+```
 
 #### 5️⃣ Deploy to Firebase Hosting
 ```sh
 firebase deploy
+```
 
 ---
 
