@@ -17,7 +17,7 @@
     min-height: 100%;
     background-color: black;
     transition: transform 0.3s ease; // Smooth transition when toggling sidebar visibility
-    z-index: 1001; /* Sidebar sits above the overlay */
+    z-index: 1000; /* Sidebar sits above the overlay */
 
     &.open {
         transform: translateX(0); // Move sidebar into view when open
